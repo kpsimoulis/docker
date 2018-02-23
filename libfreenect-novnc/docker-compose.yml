@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  novnc:
-    image: kpsimoulis/freenect:openjdk
+  freenect:
+    image: kpsimoulis/freenect
     environment:
       # Adjust to your screen size
       - DISPLAY_WIDTH=1600
