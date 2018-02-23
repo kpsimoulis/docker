@@ -10,6 +10,6 @@ services:
       - LD_PRELOAD=/usr/local/lib/fakenect/libfakenect.so
       - FAKENECT_PATH=/session
     volumes:
-      - /Users/kosta/src/soen487/test-recording:/session
+      - ./session:/session
     ports:
       - "6080:6081"
