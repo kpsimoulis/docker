@@ -11,7 +11,7 @@ You need to download a fakenect recorded session extract it local directory "./s
 Quick Start
 -------------------------
 
-First you need to download Run the docker image and open port `6080`
+Run the docker image and open ports `6080` and `5900`
 
 ```
 docker-compose up
