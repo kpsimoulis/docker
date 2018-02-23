@@ -2,13 +2,11 @@ version: '3'
 
 services:
   novnc:
-    image: kpsimoulis/freenect
+    image: kpsimoulis/freenect:openjdk
     environment:
       # Adjust to your screen size
       - DISPLAY_WIDTH=1600
       - DISPLAY_HEIGHT=948
-      - LD_PRELOAD=/usr/local/lib/fakenect/libfakenect.so
-      - FAKENECT_PATH=/session
       - VNC_PASSWORD=${VNC_PASSWORD}
     volumes:
       - ./session:/session

@@ -1,6 +1,6 @@
-FROM alpine:3.7
+FROM openjdk:8-jdk-alpine3.7
 
-# Setup environment variables
+# Setup demo environment variables
 ENV HOME=/root \
 	DEBIAN_FRONTEND=noninteractive \
 	LANG=en_US.UTF-8 \
@@ -27,7 +27,8 @@ RUN apk --update --upgrade add \
 	xvfb \
 	freeglut \
 	libusb \
-	mesa-dri-swrast
+	mesa-dri-swrast \
+	maven
 
 ENV DEPS \
 		libusb-dev \
