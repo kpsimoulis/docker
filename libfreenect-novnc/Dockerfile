@@ -61,6 +61,8 @@ RUN sed -i -- "s/ps -p/ps -o pid | grep/g" /root/noVNC/utils/launch.sh
 
 COPY etc/supervisor /etc/supervisor
 
-EXPOSE 6080
+COPY docker-entrypoint.sh /
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+EXPOSE 6080 5900
+
+ENTRYPOINT ["/docker-entrypoint.sh"]

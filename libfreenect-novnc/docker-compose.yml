@@ -1,4 +1,4 @@
-version: '3.1'
+version: '3'
 
 services:
   novnc:
@@ -9,7 +9,9 @@ services:
       - DISPLAY_HEIGHT=948
       - LD_PRELOAD=/usr/local/lib/fakenect/libfakenect.so
       - FAKENECT_PATH=/session
+      - VNC_PASSWORD=${VNC_PASSWORD}
     volumes:
       - ./session:/session
     ports:
       - "6080:6081"
+      - "5900:5900"
