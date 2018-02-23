@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  novnc:
+    build: .
+    environment:
+      # Adjust to your screen size
+      - DISPLAY_WIDTH=1600
+      - DISPLAY_HEIGHT=948
+      - LD_PRELOAD=/usr/local/lib/fakenect/libfakenect.so
+      - FAKENECT_PATH=/session
+    volumes:
+      - /Users/kosta/src/soen487/test-recording:/session
+    ports:
+      - "6080:6081"
