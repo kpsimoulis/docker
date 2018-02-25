@@ -25,7 +25,7 @@ freenect-glview
 
 In your web browser you should see the freenect application:
 
-![Explorer Screenshot](https://raw.githubusercontent.com/kpsimoulis/docker/tree/master/libfreenect-novnc/screenshot.png)
+![Explorer Screenshot](https://raw.githubusercontent.com/kpsimoulis/docker/master/libfreenect-novnc/screenshot.png)
 
 Connect with VNC Viewer and protect by VNC Password
 ------------------
