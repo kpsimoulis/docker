@@ -23,6 +23,10 @@ Browse http://127.0.0.1:6080/ and inside the terminal type
 freenect-glview
 ```
 
+In your web browser you should see the freenect application:
+
+![Explorer Screenshot](https://raw.githubusercontent.com/kpsimoulis/docker/tree/master/libfreenect-novnc/screenshot.png)
+
 Connect with VNC Viewer and protect by VNC Password
 ------------------
 
