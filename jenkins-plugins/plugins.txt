@@ -1,5 +1,4 @@
 active-directory
-ansible
 ant
 bitbucket
 blueocean
@@ -18,9 +17,7 @@ junit
 leastload
 maven-plugin
 role-strategy
-ssh-agent
 ssh-slaves
-tap
 timestamper
 workflow-aggregator
 ws-cleanup
