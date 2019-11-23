@@ -64,6 +64,6 @@ services:
       AuthLDAPGroupAttribute: "memberUid"
       AuthLDAPGroupAttributeIsDN: "off"
     volumes:
-      - $HOME/src:/var/webdav
+      - $HOME:/var/webdav
     depends_on:
       - openldap
