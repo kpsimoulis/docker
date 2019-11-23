@@ -1,0 +1,50 @@
+# Entry 4: ou=Groups,dc=example,dc=org
+dn: ou=Groups,dc=example,dc=org
+objectclass: organizationalUnit
+objectclass: top
+ou: Groups
+
+# Entry 5: cn=Developers,ou=Groups,dc=example,dc=org
+dn: cn=Developers,ou=Groups,dc=example,dc=org
+cn: Developers
+gidnumber: 500
+memberuid: john
+memberuid: jane
+objectclass: posixGroup
+objectclass: top
+
+# Entry 6: ou=Users,dc=example,dc=org
+dn: ou=Users,dc=example,dc=org
+objectclass: organizationalUnit
+objectclass: top
+ou: Users
+
+# Entry 7: cn=jane,ou=Users,dc=example,dc=org
+dn: cn=jane,ou=Users,dc=example,dc=org
+cn: jane
+gidnumber: 500
+givenname: Jane
+homedirectory: /home/users/jane
+loginshell: /bin/bash
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Doe
+uid: jane
+uidnumber: 1001
+userpassword: {MD5}WEShXnZWP+3RGED9b0Dqew==
+
+# Entry 8: cn=john,ou=Users,dc=example,dc=org
+dn: cn=john,ou=Users,dc=example,dc=org
+cn: john
+gidnumber: 500
+givenname: John
+homedirectory: /home/users/john
+loginshell: /bin/bash
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: Doe
+uid: john
+uidnumber: 1000
+userpassword: {MD5}UnvVtdaJ4sMq6XTGIp/3hQ==
